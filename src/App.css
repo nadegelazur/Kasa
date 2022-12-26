@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap');
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 30px 50px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+    /* padding: 2rem 4rem 0rem; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+.container {
+    flex: 1;
+}
+@media screen and (max-width: 900px) {
+    .banner-title {
+        font-size: 35px;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media screen and (max-width: 600px) {
+    .lmj-logo {
+        width: 105px;
+        height: 34px;
+    }
+    li {
+        font-size: 12px;
+    }
+    .banner-title {
+        font-size: 35px;
+    }
 }
+@media screen and (max-width: 400px) {
+    /* .app {
+      padding: 1rem 2rem 0rem;
+    } */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    h1 {
+      font-size: 2rem;
+    }
 }

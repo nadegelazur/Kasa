@@ -1,0 +1,30 @@
+.casa-fiche-logement .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.casa-fiche-logement-content{
+    flex: 1;
+}
+.global-top-section {
+    display: flex;
+    justify-content: space-between;
+}
+.fiche-logement_title {
+    font-size: 36px;
+    color: #FF6060;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.fiche-logement_subtitle {
+    color: #FF6060;
+    margin-top: 0;
+}
+@media screen and (max-width: 600px) {
+    .fiche-logement_name{
+        line-height: 1;
+    } 
+    .fiche-logement_subtitle {
+        margin-top: 10px;
+    }
+}

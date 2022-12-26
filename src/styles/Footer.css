@@ -1,0 +1,15 @@
+.casa-footer {
+    height: 150px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+}
+p {
+    color: #fff;
+}
+.lmj-logo-footer {
+    width: 132px;
+    height: 39px;
+}

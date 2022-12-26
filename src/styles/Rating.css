@@ -1,0 +1,26 @@
+.profil {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.profil_name {
+    color: #FF6060;
+    font-size: 18px;
+    line-height: 25px;
+    align-self: center;
+    width: 30%;
+    text-align: left;
+    padding-left: 25px; 
+}
+.picture {
+    border-radius: 100px;
+    width: 64px;
+    height: 64px;
+}
+.stars {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    color: #FF6060;
+    justify-content: start;
+}

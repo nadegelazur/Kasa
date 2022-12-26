@@ -1,0 +1,28 @@
+.section-banner {
+    position: relative;
+    background-image: url('../assets/aProposBanner.jpeg');
+    background-size: cover;
+    height: 223px;
+    margin-bottom: 31px;
+    margin-top: 18px;
+}
+.kasa-a-propos .dropdowns-container {
+    flex-direction: column;
+    align-items: center; 
+    height: auto;
+}
+.kasa-a-propos .dropdown {
+    margin-bottom: 31px;
+    width: 1023px;
+    height: auto;
+    border-radius: 5px;
+}
+.kasa-a-propos .dropdown_btn {
+    font-size: 24px;
+    font-weight: 500;
+}
+@media screen and (max-width: 900px) {
+    .section-banner {
+        margin-bottom: 0;
+    }
+}

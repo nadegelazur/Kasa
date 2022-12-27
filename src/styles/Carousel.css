@@ -7,6 +7,12 @@
     border-radius: 25px;
     object-fit: cover;
 }
+.numberOfImages {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    color: #fff;
+}
 .arrow_prev,
 .arrow_next {
     border: none;

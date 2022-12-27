@@ -1,7 +1,7 @@
 import '../styles/FicheLogement.css'
 import { useParams, Navigate } from 'react-router-dom';
-// import annonces from '../data/data.json';
-// import notFound from '../pages/NotFound'
+import annonces from '../data/data.json';
+import notFound from '../pages/NotFound'
 import Tags from '../components/Tags';
 import Rating from '../components/Rating';
 import Dropdown from '../components/Dropdown'
@@ -19,14 +19,23 @@ function FicheLogement() {
             response => response.json()
         ).then((data) => {
             // console.log(data)
-            const currentLogement = data.find((annonce) => {
-                return annonce.id === id;
+            const currentLogement = data.find((annonce) => { 
+                return annonce.id === id;   
             });
             setdetailsLogement(currentLogement)
-
-            console.log(currentLogement)
+            // console.log(currentLogement)
         })
     }, [])
+    
+    const currentLogement = annonces.find((annonce) => { 
+        return annonce.id === id;   
+    });
+    if(!currentLogement) {
+        console.log('erreur')
+        return <Navigate to="./NotFound.js" />;
+        
+        
+    }
     
     return (
         <div className='casa-fiche-logement'>

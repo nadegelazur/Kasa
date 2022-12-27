@@ -3,6 +3,13 @@ import { useState } from 'react'
 
 function Dropdown(props) {
     const [isActive, setIsActive] = useState(false);
+    console.log(isActive)
+
+    if(isActive === true) {
+        console.log('ok')
+    }
+    
+    
 
     return (
         <div className='dropdown'>
@@ -11,7 +18,9 @@ function Dropdown(props) {
                 <i className='fa-solid fa-chevron-down'></i>
             </div>
             {isActive && 
+                
                 <div className='dropdown_value'>{props.children}</div>
+                
             }   
         </div>
     )

@@ -36,10 +36,10 @@
     position: absolute;
     color: #fff;
     top: 30%;
-    right: 3%;
-    
+    right: 3%;  
 }
 .dropdown_value {
+  height: 249px;
   border-radius: 10px;
   background-color: #f7F7F7;
   padding: 40px 12px;

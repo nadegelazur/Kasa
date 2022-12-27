@@ -13,13 +13,16 @@
 }
 .kasa-a-propos .dropdown {
     margin-bottom: 31px;
-    width: 1023px;
     height: auto;
     border-radius: 5px;
 }
+
 .kasa-a-propos .dropdown_btn {
     font-size: 24px;
     font-weight: 500;
+}
+.kasa-a-propos .dropdown_value {
+    height: auto;
 }
 @media screen and (max-width: 900px) {
     .section-banner {

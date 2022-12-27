@@ -5,17 +5,13 @@ function Dropdown(props) {
     const [isActive, setIsActive] = useState(false);
     console.log(isActive)
 
-    if(isActive === true) {
-        console.log('ok')
-    }
-    
-    
-
     return (
         <div className='dropdown'>
-            <div className='dropdown_btn' onClick={() => setIsActive(!isActive)}>
+            <div className={
+                "dropdown_btn" + (isActive ? " visible" : "")
+            } onClick={() => setIsActive(!isActive)}>
                 {props.title}
-                <i className='fa-solid fa-chevron-down'></i>
+                
             </div>
             {isActive && 
                 

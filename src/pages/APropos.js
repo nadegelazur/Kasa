@@ -4,7 +4,7 @@ import Dropdown from '../components/Dropdown'
 
 function APropos() {
     return (
-        <div className='kasa-a-propos kasa-a-propos'>
+        <div className='kasa-a-propos'>
         
                 <section className='section-banner'></section>
                 <div className='dropdowns-container'>

@@ -1,18 +1,18 @@
 .dropdowns-container {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
   margin-top: 24px;
   height: 367px;
-  margin: 24px auto;
+   margin: 24px auto; */
   
 }
 
 .dropdown {
   position: relative;
-  width: 582px;
-  height: 52px;
+  /* width: 582px;
+  height: 52px; */
 }
 
 .dropdown_btn {
@@ -24,11 +24,11 @@
   border: none;
   text-align: left;
   outline: none;
-  font-size: 18px;
+  /* font-size: 18px; */
   line-height: 25px;
-  padding-left: 20px;
+  /* padding-left: 20px;
   padding-top: 13px;
-  padding-bottom: 13px;
+  padding-bottom: 13px; */
   z-index: 10;
 }
 .dropdown_btn::after {

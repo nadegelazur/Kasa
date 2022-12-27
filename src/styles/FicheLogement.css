@@ -1,11 +1,4 @@
-.casa-fiche-logement .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-.casa-fiche-logement-content{
-    flex: 1;
-}
+
 .global-top-section {
     display: flex;
     justify-content: space-between;
@@ -22,6 +15,32 @@
 }
 .dropdowns-container .dropdown_value {
     height: 249px;
+}
+@media screen and (max-width: 900px) {
+    .global-top-section {
+        flex-direction: column;
+    }
+    .fiche-logement_title {
+        line-height: 1.5;
+    }
+    .section-tags-list {
+        margin-top: 13px;
+    }
+    .rating{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .stars {
+        order: 1;
+        width: 35%;
+    }
+    .profil {
+        order: 2;
+    }
+    .dropdowns-container {
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 600px) {
     .fiche-logement_name{

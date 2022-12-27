@@ -24,3 +24,9 @@
     color: #FF6060;
     justify-content: start;
 }
+
+@media screen and (max-width: 900px) {
+    .stars {
+        width: 35%;
+    }
+}

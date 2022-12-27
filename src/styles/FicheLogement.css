@@ -9,12 +9,28 @@
     font-weight: 500;
     margin-bottom: 0;
 }
+.casa-fiche-logement div.dropdowns-container {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 150px;
+}
+.casa-fiche-logement div.dropdown {
+    height: auto;
+    margin-top: 10px;
+} 
+.casa-fiche-logement div.dropdown_btn {
+    padding: 14px 32px;
+    margin: 0 auto;
+    /* width: 534px; */
+}
 .fiche-logement_subtitle {
     color: #FF6060;
     margin-top: 0;
 }
-.dropdowns-container .dropdown_value {
-    height: 249px;
+.dropdowns-container div.dropdown_value {
+    /* height: 249px; */
 }
 @media screen and (max-width: 900px) {
     .global-top-section {
@@ -43,10 +59,22 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .fiche-logement_title {
+        font-size: 24px;
+    }
     .fiche-logement_name{
         line-height: 1;
     } 
     .fiche-logement_subtitle {
         margin-top: 10px;
+    }
+    .casa-fiche-logement div.dropdown {
+        margin-top: 10px;
+        width: auto;
+    }
+}
+@media screen and (min-width: 900px) {
+    .casa-fiche-logement div.dropdown {
+        width: 49%;
     }
 }

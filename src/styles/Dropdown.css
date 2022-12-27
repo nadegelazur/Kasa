@@ -24,11 +24,7 @@
   border: none;
   text-align: left;
   outline: none;
-  /* font-size: 18px; */
   line-height: 25px;
-  /* padding-left: 20px;
-  padding-top: 13px;
-  padding-bottom: 13px; */
   z-index: 10;
 }
 .dropdown_btn::after {

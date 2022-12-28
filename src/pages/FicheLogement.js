@@ -1,13 +1,11 @@
 import '../styles/FicheLogement.css'
 import { useParams, Navigate } from 'react-router-dom';
 import annonces from '../data/data.json';
-import notFound from '../pages/NotFound'
 import Tags from '../components/Tags';
 import Rating from '../components/Rating';
 import Dropdown from '../components/Dropdown'
 import Carousel  from '../components/Carousel';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function FicheLogement() {
    
@@ -32,15 +30,12 @@ function FicheLogement() {
     });
     if(!currentLogement) {
         console.log('erreur')
-        return <Navigate to="./NotFound.js" />;
-        
-        
+        return <Navigate to="./NotFound.js" />;  
     }
     
     return (
         <div className='casa-fiche-logement'>
             <Carousel slides={detailsLogement && detailsLogement.pictures} />
-
             <section className='global-top-section'>
                 <section className='left-section'>
                     <div className='fiche-logement_name'>
@@ -53,10 +48,9 @@ function FicheLogement() {
                     <Rating 
                         name={detailsLogement && detailsLogement.host.name}
                         picture={detailsLogement && detailsLogement.host.picture}
-                        rating={detailsLogement && detailsLogement.rating}/>
+                        rating={detailsLogement && detailsLogement.rating} />
                 </section>
             </section>
-
             <div className='dropdowns-container'>
                 <Dropdown title={'Description'}>
                     {detailsLogement && detailsLogement.description}

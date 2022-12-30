@@ -22,4 +22,44 @@
 .kasa-not-found_sub-title  {
     font-size: 36px;
     margin-bottom: 182px;
+    width: 92%;
+    text-align: center;
+}
+@media screen and (max-width: 1100px) {
+    .kasa-not-found_sub-title {
+        font-size: 30px;
+        margin-bottom: 182px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .kasa-not-found_title {
+        margin-bottom: 33px;
+        font-size: 220px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .kasa-not-found_title {
+        margin-top: 130px;
+        font-size: 150px;
+        margin-bottom: 0;
+    }
+    .kasa-not-found_sub-title  {
+        font-size:25px;
+        font-weight: 500;
+        margin-bottom: 150px;
+    }
+    
+}
+@media screen and (max-width: 375px) {
+    .kasa-not-found_title {
+        margin-top: 130px;
+        font-size: 96px;
+        margin-bottom: 0;
+    }
+    .kasa-not-found_sub-title  {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 150px;
+    }
+    
 }

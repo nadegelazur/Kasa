@@ -11,25 +11,27 @@ body {
     font-size: 16px;
     line-height: 1.7;
     padding: 30px 50px 0px 50px;
-
 }
-
 .app {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+    overflow: hidden;   
 }
 .container {
     flex: 1;
 }
 @media screen and (max-width: 900px) {
+    body {
+        padding: 30px 20px 0px 20px;
+    }
     .banner-title {
         font-size: 35px;
     }
 }
 
 @media screen and (max-width: 600px) {
+    
     .lmj-logo {
         width: 105px;
         height: 34px;
@@ -45,8 +47,15 @@ body {
     }
 }
 @media screen and (max-width: 400px) {
-
     h1 {
       font-size: 2rem;
     }
+}
+@media screen and (max-width: 900px) {
+    
+        .tag {
+            width: 84px;
+            height: 18px; 
+         }
+    
 }

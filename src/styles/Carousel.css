@@ -38,3 +38,21 @@
     left: 2.5%;
     transform: rotate(180deg);
 }
+@media screen and (max-width: 900px) {
+    .arrow_prev,
+    .arrow_next {
+        background: url(../assets/arrow.svg) center center / 36px 79px no-repeat;
+    }
+}
+@media screen and (max-width: 600px) {
+    .arrow_prev,
+    .arrow_next {
+        background: url(../assets/arrow.svg) center center / 20px 79px no-repeat;
+    }
+}
+@media screen and (max-width: 350px) {
+    .arrow_prev,
+    .arrow_next {
+        background: url(../assets/arrow.svg) center center / 12px 79px no-repeat;
+    }
+}

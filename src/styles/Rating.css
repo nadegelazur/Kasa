@@ -23,10 +23,24 @@
     height: 30px;
     color: #FF6060;
     justify-content: start;
+    align-self: center;
 }
 
 @media screen and (max-width: 900px) {
     .stars {
         width: 35%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .profil_name {
+        font-size: 12px;
+        line-height: 17px;
+        
+    }
+}
+@media screen and (max-width: 350px) {
+    .picture {
+        width: 32px;
+        height: 32px;
     }
 }

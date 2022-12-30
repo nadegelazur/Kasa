@@ -33,6 +33,9 @@
     /* height: 249px; */
 }
 @media screen and (max-width: 900px) {
+    .toto .image {
+        height: 315px;
+    }
     .global-top-section {
         flex-direction: column;
     }
@@ -57,20 +60,44 @@
     .dropdowns-container {
         flex-direction: column;
     }
+    .casa-fiche-logement div.dropdowns-container {
+        margin-top: 0;
+    }
 }
 @media screen and (max-width: 600px) {
+    .toto .image {
+        height: 255px;
+    }
     .fiche-logement_title {
-        font-size: 24px;
+        font-size: 32px;
     }
     .fiche-logement_name{
         line-height: 1;
     } 
     .fiche-logement_subtitle {
-        margin-top: 10px;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: start;
     }
     .casa-fiche-logement div.dropdown {
         margin-top: 10px;
         width: auto;
+    }
+}
+@media screen and (max-width: 450px) {
+    .fiche-logement_title {
+        font-size: 23px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .toto .image {
+        height: 213px;
+    }
+    .fiche-logement_title {
+        font-size: 18px;
+    }
+    .section-tags-list {
+        margin-top: 0;
     }
 }
 @media screen and (min-width: 900px) {

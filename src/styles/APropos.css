@@ -5,6 +5,7 @@
     height: 223px;
     margin-bottom: 31px;
     margin-top: 18px;
+    border-radius: 25px;
 }
 .kasa-a-propos .dropdowns-container {
     flex-direction: column;
@@ -18,6 +19,7 @@
 }
 
 .kasa-a-propos .dropdown_btn {
+    
     font-size: 24px;
     font-weight: 500;
     padding: 16px 32px;
@@ -29,5 +31,36 @@
     width: 90%;
     margin: 0 auto;
     margin-top: -15px;
+    
 }
-
+@media screen and (max-width: 900px) {
+    .kasa-a-propos .dropdown_btn,
+    .kasa-a-propos .dropdown_value {
+        width: 100%;
+    }
+    .kasa-a-propos .dropdown_btn {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .kasa-a-propos .dropdown_btn {
+        font-size: 18px;
+        padding: 11px 32px;
+    }
+    .kasa-a-propos .dropdown_value {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width:375px) {
+    .kasa-a-propos .dropdown_btn {
+        font-size: 16px;
+        padding: 8px 32px;
+    }
+    .kasa-a-propos .dropdown_value {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+}

@@ -8,8 +8,26 @@
 }
 p {
     color: #fff;
+    margin-top: 10px;
 }
 .lmj-logo-footer {
     width: 132px;
     height: 39px;
+}
+@media screen and (max-width: 600px) {
+    .lmj-logo-footer {
+        width: 25%;
+        height: auto;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 350px) {
+    p {
+        font-size: 9px;
+        width: 52%;
+        margin: 0 auto;
+        padding: 5px;
+    }
 }
